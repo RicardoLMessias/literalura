@@ -2,6 +2,9 @@ package br.com.alura.challenger.literalura.service;
 
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
+import com.fasterxml.jackson.databind.type.CollectionType;
+
+import java.util.List;
 
 public class ConverteDados implements iConverteDados{
     private ObjectMapper mapper = new ObjectMapper();
@@ -15,4 +18,7 @@ public class ConverteDados implements iConverteDados{
             throw new RuntimeException(e);
         }
     }
+
+
+
 }
